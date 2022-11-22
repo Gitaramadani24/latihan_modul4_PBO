@@ -3,22 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modul4;
+package latihan_modul5_pbo;
 
 /**
  *
  * @author user
  */
+import javax.swing.JOptionPane;
+
 public class lat2 {
-    public static void main (String [] args)
-    {
-        int x = 10;
-        int y = 20;
-        int z = 45;
-        int a = x+y+z;
-        System.out.println("number 1 = "+x);
-        System.out.println("number 2 = "+y);
-        System.out.println("number 3 = "+z);
-        System.out.println("average is = " +(+a/3));
-    }
+	
+	public static void main (String[] args)
+	{
+		//input OptionPane1
+	String name = "";
+	name = JOptionPane.showInputDialog("Kalimat 1#");
+	
+		//input OptionPane2
+	String nama = "";
+	nama = JOptionPane.showInputDialog("Kalimat 2#");
+	
+		//input OptionPane3
+	String namawa = "";
+	namawa = JOptionPane.showInputDialog("Kalimat 3#");
+	
+	String msg = name +" "+ nama +" "+ namawa ;
+	JOptionPane.showMessageDialog(null, msg);
+		}	
 }
